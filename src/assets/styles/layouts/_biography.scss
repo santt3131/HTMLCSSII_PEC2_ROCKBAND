@@ -1,0 +1,59 @@
+.container-biografy-member-heading {
+  font-size: calc(1.5em + 2vw);
+  @include gold-text;
+}
+
+.container-biografy-member-subheading {
+  font-size: calc(1em + 2vw);
+  color: $second-color;
+}
+
+
+.container-biografy-member-photo__img {
+  width: 200px;
+  height: 200px;
+}
+
+//mobile
+@media (min-width: 320px) and (max-width: 767px) {
+  .container-biografy,
+  .container-biografy-member {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 1em 0;
+    text-align: center;
+  }
+}
+
+//tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-biografy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .container-biografy-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50vw - 2em); //2 elementos por fila, -2 por el margin
+    margin: 1em;
+  }
+}
+//desktop
+@media (min-width: 1024px) {
+  .container-biografy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .container-biografy-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33vw - 2em); //3 elementos por fila, -2 por el margin
+    margin: 1em;
+  }
+}

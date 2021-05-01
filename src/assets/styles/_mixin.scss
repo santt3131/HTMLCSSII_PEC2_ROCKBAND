@@ -1,0 +1,20 @@
+//mix más global para ser utilizados en todas las imagenes
+@mixin gold-text {
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #c69b7c 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #afa699 78%,
+    #c69b7c 100%
+  );
+  background-clip: text;
+}
+
+@mixin imagen-responsive {
+  width: calc(10em + 10vw);
+  height: calc(10em + 10vw);
+}

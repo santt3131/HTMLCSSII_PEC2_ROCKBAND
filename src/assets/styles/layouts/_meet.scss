@@ -1,0 +1,59 @@
+/*FORM MEET GREET */
+.container-meet {
+  padding: 5vw;
+  margin: 0 20px 20px 20px;
+}
+
+.container-meet-heading {
+  text-align: center;
+}
+
+.container-meet-form__col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-video {
+  padding-bottom: 3vw;
+}
+
+.figure-video {
+  font-size: calc(.6em + 2vw);
+  text-align: center;
+}
+
+/*Clase para esconder un elemento que será únicamente visible a los lectores de pantalla*/
+.figure-video-iframe__accessibility {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.figure-video-iframe {
+  position: relative;
+  right: 9vw;
+  left: 9vw;
+  display: block;
+  width: 80vw;
+  overflow: hidden;
+  border: 5px solid rgb(22, 77, 8);
+}
+
+.figure-video-iframe__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.figure-video-iframe::before {
+  display: block;
+  padding-top: 56.25%;
+  content: "";
+}

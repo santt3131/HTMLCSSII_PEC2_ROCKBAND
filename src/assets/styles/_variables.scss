@@ -1,0 +1,17 @@
+@use "sass:color";
+
+$font-family-sans: "Open Sans";
+$font-family-vollkron: "Vollkorn";
+$main-color: #18171c;
+$second-color: white;
+$background-dark : rgb(33, 37, 41);
+$background-dark-blue: rgb(3, 22, 46);
+$letter-golden: #ffd700;
+$letter-light-yellow: #f0e088;
+$gray: rgba(255, 255, 255, .55);
+
+$theme-colors: (
+  "danger":#da0707,
+  "warning":#f9ff4a ,
+  "success":#24c567,
+);
